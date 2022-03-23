@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        *{
+            padding:0;
+            margin: 0;
+        }
+        main{
+            width: 100%;
+            height: 450px;
+            margin: 200px auto;
+            overflow: hidden;
+            position: relative;
+            border: 1px solid rgb(109, 43, 43);
+
+        }
+        h1{
+            width: 80%;
+            margin: 10px auto;
+
+        }
+        span{
+            position: relative;
+            top: 40%;
+            font-size: 40px;
+            color: purple;
+            cursor: pointer;
+            border: 1px solid teal;
+            left: 0.5%;
+            z-index: 1;
+        }
+        span:nth-of-type(2){
+            left: 98%;
+            text-align: right;
+        }
+        .slider{
+            border: 1px solid yellow;
+            width: 98%;
+            /* height: 300px; */
+            margin: 10px;
+            display: flex;
+            justify-content: space-around;
+            /* overflow-x: auto; */
+        }
+        /* .slider::-webkit-scrollbar{
+            visibility: hidden;
+
+        } */
+       
+        .prod-slider{
+            border: 1px solid tomato;
+            height: 200px;
+            width: 15%;
+        }
+        .prod-slider>img{
+            width: 100%;
+            height: 50%;
+            background-color: whitesmoke;
+
+
+        }
+        .slider>.prod-slider>div {
+            display: flex;
+        }
+        p{
+            margin-top: 20px;
+        }
+        h4{
+            margin-top: 5px;
+        }
+        .prod-slider button:hover{
+            background-color: rgb(67, 252, 252);
+            border-color: rgb(8, 245, 245);
+            
+        }
+        button{
+            margin-left: 100px;
+            width: 50px;
+           
+            border-radius: 8px;
+        }
+        
+
+       
+    </style>
+</head>
+<body>
+    <main>
+        <h1>BEST DEALS</h1>
+        <span>&#139;</span>
+        <span>&#155;</span>
+      <div class="slider" >
+       <div class="prod-slider">
+           <img src="C:\Users\user\Desktop\fraazoWebsite\images\image3\onion.png" alt="">
+           <p>2kg Onion at Rs.2</p>
+           <p>1 unit</p>
+           <div id="flex"><h4>$2 <del style="color: rgb(207, 202, 202);">$70</del></h4>
+            <button> ADD</button>
+        </div>
+       </div>
+       <div class="prod-slider">
+           <img src="https://fraazo-master.s3.ap-south-1.amazonaws.com/products/LMIN11.png" alt="">
+           <p>Mint Leaves</p>
+           <p>100 g</p>
+           <div id="flex"><h4>$7 <del style="color: rgb(207, 202, 202);">$17</del></h4>
+            <button> ADD</button>
+        </div>
+       <div class="prod-slider"></div>
+       <div class="prod-slider"></div>
+       <div class="prod-slider"></div>
+       <!-- <div class="prod-slider"></div>
+       <div class="prod-slider"></div> 
+       <div class="prod-slider"></div>
+       <div class="prod-slider"></div>
+       <div class="prod-slider"></div>
+       <div class="prod-slider"></div>
+       <div class="prod-slider"></div>
+       <div class="prod-slider"></div>
+       <div class="prod-slider"></div>
+       <div class="prod-slider"></div>
+       <div class="prod-slider"></div>
+       <div class="prod-slider"></div>
+       <div class="prod-slider"></div>
+       <div class="prod-slider"></div>
+       <div class="prod-slider"></div> -->
+    </div>
+    </main>
+</body>
+</html>
+<script>
+    var span =document.getElementsByTagName("span");
+    var div=document.getElementsByTagName("div");
+    var l=0;
+    span[1].onclick =() =>{
+        l++;
+        for(var i of div){
+            if(l==0) {i.style.left="0px"}
+            if(l==1) {i.style.left="-240px"}
+            if(l==2) {i.style.left="-540px"}
+            if(l==3) {i.style.left="-800px"}
+            if(l==4) {i.style.left="-1090px"}
+            if(l==5) {i.style.left="-1330px"}
+            if(l==6) {i.style.left="-1600px"}
+            if(l==7) {i.style.left="-1870px"}
+            if(l==8) {i.style.left="-2140px"}
+            if(l==9) {i.style.left="-2420px"}
+            if(l==10) {i.style.left="-2690px"}
+            if(l==11) {i.style.left="-2950px"}
+            if(l==12) {i.style.left="-3230px"}
+            if(l==13) {i.style.left="-3500px"}
+            if(l==14) {i.style.left="-3770px"}
+            if(l==15) {i.style.left="-4200px"}
+            if(l==16) {i.style.left="-4500px"}
+            if(l==17) {i.style.left="-4650px"}
+            if(l==18) {i.style.left="-5100px"}
+            if(l==19) {i.style.left="-5400px"}
+            if(l==20) {i.style.left="-5700px"}
+            if(l>14) {l=14}
+        }
+    }
+
+    var l=0;
+    span[0].onclick =() =>{
+        l--;
+        for(var i of div){
+            if(l==0) {i.style.left="0px"}
+            if(l==1) {i.style.left="-240px"}
+            if(l==2) {i.style.left="-540px"}
+            if(l==3) {i.style.left="-800px"}
+            if(l==4) {i.style.left="-1090px"}
+            if(l==5) {i.style.left="-1330px"}
+            if(l==6) {i.style.left="-1600px"}
+            if(l==7) {i.style.left="-1870px"}
+            if(l==8) {i.style.left="-2140px"}
+            if(l==9) {i.style.left="-2420px"}
+            if(l==10) {i.style.left="-2690px"}
+            if(l==11) {i.style.left="-2950px"}
+            if(l==12) {i.style.left="-3230px"}
+            if(l==13) {i.style.left="-3500px"}
+            if(l==14) {i.style.left="-3770px"}
+            if(l==15) {i.style.left="-4200px"}
+            if(l==16) {i.style.left="-4500px"}
+            if(l==17) {i.style.left="-4650px"}
+            if(l==18) {i.style.left="-5100px"}
+            if(l==19) {i.style.left="-5400px"}
+            if(l==20) {i.style.left="-5700px"}
+            if(l<0) {l=0}
+        }
+    }
+</script>
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        *{
+            padding:0;
+            margin: 0;
+        }
+        main{
+            width: 100%;
+            height: 350px;
+            margin: 200px auto;
+            overflow: hidden;
+            position: relative;
+
+        }
+        h1{
+            width: 80%;
+            margin: 10px auto;
+
+        }
+        span{
+            position: relative;
+            top: 40%;
+            font-size: 40px;
+            color: purple;
+            cursor: pointer;
+            
+            left: 0.5%;
+            z-index: 1;
+        }
+        span:nth-of-type(2){
+            left: 98%;
+            text-align: right;
+        }
+        section{
+            min-width: 98%;
+            height: 300px;
+            margin: 10px auto;
+            display: flex;
+            overflow-x: auto;
+        }
+        section::-webkit-scrollbar{
+            visibility: hidden;
+
+        }
+        div{
+           min-width: 230px;
+            height: 280px;
+            position: relative;
+            left: 0;
+            text-align: center;
+            padding-top: 60px;
+            font-size: 100px;
+            font-weight: bold;
+            margin: 10px 20px;
+            color: white;
+            background-color: purple;
+            transition: 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>BEST DEALS</h1>
+        <span>&#139;</span>
+        <span>&#155;</span>
+        <section>
+        <div>0</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div></section>
+    </main>
+</body>
+</html>
+<script>
+    var span =document.getElementsByTagName("span");
+    var div=document.getElementsByTagName("div");
+    var l=0;
+    span[1].onclick =() =>{
+        l++;
+        for(var i of div){
+            if(l==0) {i.style.left="0px"}
+            if(l==1) {i.style.left="-250px"}
+            if(l==2) {i.style.left="-530px"}
+            if(l==3) {i.style.left="-800px"}
+            if(l==4) {i.style.left="-1070px"}
+            if(l==5) {i.style.left="-1330px"}
+            if(l==5) {i.style.left="-1330px"}
+            if(l>20) {l=20}
+        }
+    }
+
+    var l=0;
+    span[0].onclick =() =>{
+        l--;
+        for(var i of div){
+            if(l==0) {i.style.left="0px"}
+            if(l==1) {i.style.left="-250px"}
+            if(l==2) {i.style.left="-530px"}
+            if(l==3) {i.style.left="-800px"}
+            if(l==4) {i.style.left="-1070px"}
+            if(l==5) {i.style.left="-1330px"}
+            if(l<0) {i=5}
+        }
+    }
+</script> -->

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+</head>
+<style>
+    #cart-Container {
+        width:90%;
+        display: grid;
+        grid-template-columns: repeat(4,23%);
+        grid-template-rows: auto;
+        justify-content: space-evenly;
+        grid-gap:20px;
+        
+    }
+    .cartProd{
+        height:450px;
+        border:1px solid #000;
+        text-align: center;
+    }
+    .cartProd img{
+        width:100%;
+        height:65%;
+        
+       
+    }
+    .cartProd h4{
+        margin:0px;
+        line-height:35px;
+        /* padding:0px; */
+    }
+    .cartProd p{
+        margin:0px;
+        /* padding:0px; */
+
+    }
+</style>
+<body>
+    <div id="cart-Container">
+
+
+    </div>
+</body>
+</html>
+<script>
+    var products = JSON.parse(localStorage.getItem('addCartItem')) ||[];
+    displayItem(products)
+    // console.log(products);
+    function displayItem(products){
+    document.getElementById("cart-Container").innerHTML = "";
+    products.map(function(elem){
+    var mainDiv = document.createElement('div') 
+    mainDiv.setAttribute('class','cartProd');
+
+    var img= document.createElement("img");
+    img.setAttribute('src', elem.imgUrl);
+
+    // var arrival = document.createElement('p')
+    // arrival.textContent =elem.arrival;
+
+    var h4= document.createElement('h4')
+    h4.textContent=elem.name;
+   
+    var price = document.createElement('h4')
+    price.textContent=elem.price;
+
+    var unit = document.createElement('p')
+    unit.textContent=elem.unit;
+   
+    mainDiv.append(img, h4, unit, price);
+    document.getElementById("cart-Container").append(mainDiv);
+    
+});
+}
+// var yourItem = JSON.parse(localStorage.getItem("ecartItem"));
+// console.log(yourItem);
+
+// displayFavitem(yourItem);
+
+// function displayFavitem(yourItem) {
+//   document.getElementById("cartcontainer").innerHTML = "";
+//   yourItem.map(function (item) {
+//     var image = document.createElement("img");
+//     image.setAttribute("src", item.image_url);
+//     image.setAttribute("class", "imgdiv");
+
+//     var pPrice = document.createElement("p");
+//     pPrice.textContent = item.price;
+//     pPrice.setAttribute("class", "price");
+
+//     var pdetail = document.createElement("p");
+//     pdetail.textContent = item.detail;
+//     pdetail.setAttribute("class", "detail");
+
+//     var divcont = document.createElement("div");
+//     divcont.setAttribute("class", "divCont");
+//     divcont.append(image, pPrice, pdetail);
+
+//     document.querySelector(".cart2ndmain").append(divcont);
+//   });
+// }
+
+
+</script>

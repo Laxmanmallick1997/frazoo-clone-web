@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <style>
+        .fixeddiv{
+    height: 500px;
+    width: 23%;
+    
+    /* position: fixed; */
+}
+
+.fixeddiv>div{
+    
+   
+    width: 100%;
+    height: 10%;
+}
+.selectetab{
+ padding: 4.9%;
+ width: 100%;
+ text-align: center;
+ background-color: #ffffff;
+ border: 1px solid gray;
+ font-size: 20px;
+}
+.left{
+    border: 1px solid tomato;
+    width: 100%;
+    display: flex;
+}
+.fixeddiv{
+    width: 20%;
+    border: 1px solid blue;
+    
+}
+.right{
+    width: 70%;
+    border: 1px solid blue;
+    margin-left: 30px;
+   
+
+}
+
+    </style>
+</head>
+<body>
+    <div class="left">
+        <div class="fixeddiv"> 
+            <div> 
+                <a href="fruits.html"> <select name="name"  class="selectetab"> 
+                  <option style="position: fixed;" value="Dry Fruits"> dry fruit </option>
+                  
+                  
+              </select></a>
+            </div>
+            <div> 
+                <a href="fruits.html"><select name="brands"  class="selectetab"> 
+                <option value="Fruits">Fruits</option>
+                  <option value="fruit"> Grapes, Banana, Guava & Sapota </option>
+                  <option value="fruit"> Apples, Pears, Plums</option>
+                  <option value="fruit"> Papaya, Pineapple, Pomegranate </option>
+                  <option value="fruit"> Exotic Fruits </option>
+                  <option value="fruit"> Fruit Combo</option>
+                  
+              </select></a>
+            </div>
+            <div> 
+              <select name="brands"  class="selectetab"> 
+                <a href="vegetables.html">  <option value="vege">vegetables</option>
+                  <option value="vege"> Regular Veggies </option>
+                  <option value="vege"> Onion, Potato & Tomatoes </option>
+                  <option value="vege"> Exotic Veggies </option>
+                  <option value="vege"> Root Vegetables </option>
+                  
+              </select></a>
+            </div>
+            <div> 
+              <select name="name"  class="selectetab"> 
+                  <option value="name">hydroponics</option>
+                  <option value="Hydroponics"> Hydroponics </option>
+                 
+              </select>
+            </div>
+            <div> 
+              <select name="name"  class="selectetab"> 
+                  <option value="Herbs & Leafy Products">Herbs</option>
+                  
+                 
+            </div>
+            
+              </select>
+            </div>
+            <div>
+<div id="container"></div> </div>
+
+ </div>
+</body>
+</html>
+<script src="Hydroponics.js"></script>
