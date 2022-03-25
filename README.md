@@ -18,9 +18,10 @@ For the frontend, we have used html  CSS and JavaScript,.
 <p>Product Page :</p>
 <img src="https://github.com/Laxmanmallick1997/frazoo-clone-web/blob/master/screenshots/img2.png?raw=true">
 
-<img src="https://github.com/Laxmanmallick1997/frazoo-clone-web/blob/master/screenshots/img3.png?raw=true">
 
 <p>Footer :</p>
 <img src="https://github.com/Laxmanmallick1997/frazoo-clone-web/blob/master/screenshots/img4.png?raw=true">
 
 <img src="https://github.com/Laxmanmallick1997/frazoo-clone-web/blob/master/screenshots/img5.png?raw=true">
+
+
